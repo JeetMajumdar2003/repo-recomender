@@ -5,7 +5,6 @@ import { fileURLToPath } from 'node:url'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/repo-recommender',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
