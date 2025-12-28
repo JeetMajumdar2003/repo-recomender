@@ -1,6 +1,7 @@
 import React from 'react'
 import { Github, Twitter, Linkedin } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import Logo from '@/assets/logo.svg'
 
 export default function Footer() {
     return (
@@ -9,7 +10,7 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row items-center md:items-center justify-between gap-4">
                     <div className="flex items-center gap-3">
                         <div className="grid h-10 w-10 place-items-center rounded-lg transition">
-                            <img src="./src/assets/logo.svg" alt="Repo Recommender Logo" />
+                            <img src={Logo} alt="Repo Recommender Logo" />
                         </div>
                         <div>
                             <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Repo Recommender</p>

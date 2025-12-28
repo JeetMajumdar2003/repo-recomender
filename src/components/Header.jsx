@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button'
+import Logo from '@/assets/logo.svg'
 
 export default function Header() {
     const [theme, setTheme] = useState(() => {
@@ -44,7 +45,7 @@ export default function Header() {
                             aria-label="Scroll to top"
                         >
                             <div className="grid h-10 w-10 place-items-center rounded-lg transition">
-                                <img src="./src/assets/logo.svg" alt="Repo Recommender Logo" />
+                                <img src={Logo} alt="Repo Recommender Logo" />
                             </div>
 
                             <div className="min-w-0">
